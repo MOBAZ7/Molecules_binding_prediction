@@ -43,6 +43,7 @@ for row in csv_f:
         smiles_CB2.append(row[3])
         Ki_CB2.append(row[5])
 
+#Tout ce bout de code la permet d'identifier les entrées ayant des Ki différents pour CB1 et d'en faire la moyenne        
 bla = []
 unique_smiles_CB1 = unique(smiles_CB1)
 compte = Counter(smiles_CB1)
@@ -83,6 +84,7 @@ for elem in tt:
     smiles_CB1_bis.append(elem[0])
     Ki_CB1_bis.append(elem[1])
 
+#Tout ce bout de code la permet d'identifier les entrées ayant des Ki différents pour CB2 et d'en faire la moyenne
 bla = []
 unique_smiles_CB2 = unique(smiles_CB2)
 compte = Counter(smiles_CB2)
